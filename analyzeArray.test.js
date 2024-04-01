@@ -9,6 +9,15 @@ test('basic array', () => {
     });
 });
 
+test('array in assignment', () => {
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+        average: 4,
+        min: 1,
+        max: 8,
+        length: 6,
+    });
+});
+
 test('unsorted array with negative number', () => {
     expect(analyzeArray([77, 409, -20, 91, 622])).toEqual({
         average: 235.8,
